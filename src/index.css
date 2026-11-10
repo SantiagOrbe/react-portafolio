@@ -1,0 +1,68 @@
+:root {
+  color-scheme: dark;
+  --navy: #081426;
+  --panel: #10213a;
+  --accent: #4d8dff;
+  --accent-bright: #78a8ff;
+  --text: #f4f7fc;
+  --text-muted: #a8b6cc;
+  --line: #263a56;
+  --mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-family:
+    Inter, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  background: var(--navy);
+  color: var(--text);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(ellipse at 12% 0%, rgb(24 53 89 / 18%), transparent 35rem),
+    var(--navy);
+}
+
+body,
+button,
+input,
+textarea {
+  font-family:
+    Inter, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--accent-bright);
+  outline-offset: 4px;
+}
+
+::selection {
+  background: rgb(77 141 255 / 36%);
+  color: var(--text);
+}
+
+#root {
+  min-height: 100vh;
+}
